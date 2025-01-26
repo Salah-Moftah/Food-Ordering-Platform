@@ -25,6 +25,7 @@ The Food Ordering Platform is a modern web application designed to provide users
 - **Tailwind CSS**: Utility-first CSS framework for styling.
 - **Shadcn**: Pre-built components for faster development.
 - **React Hook Form**: For handling form validation and submissions.
+- **React Query**: For managing server state and data fetching.
 - **Zod**: Schema validation library for handling data validation.
 
 ### Backend:
