@@ -49,7 +49,7 @@ The Food Ordering Platform is a modern web application designed to provide users
 
 The platform is deployed using **Vercel**:
 
-- **demo**: [https://food-ordering-platform.vercel.app](https://food-ordering-platform.vercel.app)
+- **Demo**: [https://food-ordering-platform.vercel.app](https://food-ordering-platform.vercel.app)
 
 ---
 
