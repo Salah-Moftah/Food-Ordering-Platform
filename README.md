@@ -39,6 +39,7 @@ The Food Ordering Platform is a modern web application designed to provide users
 
 ### Additional Tools & Integrations:
 
+- **TypeScript**: For adding static typing to JavaScript.
 - **Stripe**: Payment gateway for handling secure transactions.
 - **Auth0**: For seamless authentication.
 - **Multer**: For file handling and uploads.
