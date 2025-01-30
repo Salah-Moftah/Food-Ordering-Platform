@@ -6,7 +6,7 @@ The Food Ordering Platform is a modern web application designed to provide users
 
 ---
 
-## Features
+## Features 
 
 - **User Authentication/Registration/Profiles**: Secure sign-up and login system for customers and restaurant owners.
 - **Search/Sort/Filter/Pagination**: Easily find your favorite cuisines or dishes.
