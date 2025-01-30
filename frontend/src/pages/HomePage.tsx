@@ -22,7 +22,7 @@ const HomePage = () => {
         <SearchBar placeHolder='Search by City or Town' onSubmit={handleSearchSubmit} />
       </div>
       <div className="grid md:grid-cols-2 gap-5">
-        <img src={landingImage} alt='landingImage' />
+        <img rel="preload" src={landingImage} alt='landingImage' />
         <div className='flex flex-col items-center justify-center gap-4 text-center'>
           <span className='font-bold text-3xl tracking-tighter'>
             Order takeaway even faster!
