@@ -11,16 +11,15 @@ import orderRoute from "./routes/OrderRoute";
 const PORT = process.env.PORT || 7000;
 
 // Connect to MongoDB using the connection string from .env
-mongoose.connect(process.env.MONDODB_CONNECTION_STRING as string)
-.then(() => {
+mongoose.connect(process.env.MONGODB_CONNECTION_STRING as string).then(() => {
   console.log("Connected to Database.");
 });
 
 cloudinary.config({
-  cloud_name: process.env.CLOUDINARY_NAME,
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET,
-})
+});
 
 // Initialize Express app
 const app = express();
@@ -33,7 +32,7 @@ app.use(
   // Use express.raw() middleware to process incoming request bodies as raw binary data (Buffer)
   express.raw({
     type: "*/*", // This specifies that the middleware should apply to all content types
-  })
+  }),
 );
 
 // Middleware to parse JSON request bodies
@@ -44,9 +43,9 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 // It allows external systems or developers to verify that the application is running and responsive by returning a basic "health OK!" message when the endpoint is accessed.
-app.get('/health', async (req: Request, res: Response) => {
-  res.send({ message: 'health OK!'})
-})
+app.get("/health", async (req: Request, res: Response) => {
+  res.send({ message: "health OK!" });
+});
 
 app.use("/api/my/user", myUserRoute);
 
